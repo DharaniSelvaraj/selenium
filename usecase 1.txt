@@ -1,0 +1,108 @@
+Scenario : Register User in ebay.in
+1. The user should go to ebay.in "https://in.ebay.com"
+2. The user should click on register link
+	1. Identify the register link
+	2. Register link should be cliked
+3. The user should fill the required details
+	1. Identity firstname text box
+<input maxlength="63" type="text" name="firstname" value="" id="firstname" size="32" class="fld wide wide fld regular-text bold-text float-box" v="1" t="1" a="1" aria-autocomplete="none" aria-required="true" data-state="error" aria-invalid="true" aria-describedby="firstname_w">
+name="firstname"
+id="firstname"
+	2. Type the string input "Dharani"
+	3. Identity lastname text box
+<input maxlength="63" type="text" name="lastname" value="" id="lastname" size="32" class="fld wide wide fld regular-text bold-text float-box" v="1" t="1" a="1" aria-autocomplete="none" aria-required="true" data-state="error" aria-invalid="false" aria-describedby="">
+name="lastname"
+id="lastname"
+	4. Type the string input "Selvaraj"
+	5. Identity email text box
+<input maxlength="64" type="text" name="email" value="" id="email" size="32" class=" wide fld regular-text bold-text float-box" v="1" t="1" a="1" oncopy="return false" aria-required="true" data-state="error" aria-invalid="false" aria-describedby="">
+name="email"
+id="email"
+	6. Type the string input "dharaniselvarajcbe@gmail.com"
+	7. Identity password text box
+<input maxlength="64" type="password" name="PASSWORD" value="" id="PASSWORD" size="32" class="re-w3 wide  wide fld regular-text bold-text float-box" aria-describedby="PASSWORD_helper" v="1" t="1" a="1" aria-autocomplete="none" oncopy="return false" autocomplete="off" aria-required="true" data-required-rules="3" data-state="inactive" style="padding-right: 81px">
+name="PASSWORD"
+id="PASSWORD"
+	8. Type the string input "Dharu@10"
+4. The user should click on create account button
+	1. Identity the create account button
+<button id="ppaFormSbtBtn" type="submit" class="btn btn--primary" style="" xpath="1">Create account</button>
+id="ppaFormSbtBtn"
+
+
+Scenario : Search for Da vinci code books and get the name of the books...
+
+ 
+
+
+1. The user should be on Amazon.in  "https://www.amazon.in/"
+
+2. The user should select 'Books' from the category select / list box
+    
+	1. Identify the select box
+        name="url"
+    
+	2. Select the value called 'Books'
+
+3. The user should type 'Da Vinci code' books in search text box
+    
+	1. Identify the Search text box
+        id="twotabsearchtextbox"
+    
+	2. Type the string input "Da Vinci Code' Books
+
+4. The user should click on the magnifier button
+    
+	1. Identify the button with magnifier symbol
+        //input[@tabindex = '10']
+
+ 	2. The button should be clicked    
+
+5. The user should get titles of all the items listed on the page
+    
+	1. Identify the common property that all the elements are sharing     
+    
+	2. Get the text on the element and print using SYSO command...
+
+
+
+
+
+Available properties :
+
+ 
+
+
+Identify the select box: 
+
+ 
+
+
+<select aria-describedby="searchDropdownDescription" class="nav-search-dropdown searchSelect" data-nav-digest="R0Y6PpUvJhgOTk4cZYLpBnPuc6o=" data-nav-selected="0" id="searchDropdownBox" name="url" style="display: block; top: 0px;" tabindex="8" title="Search in"> 
+// There are several attributes for the element, not every attribute is a locator...
+
+ 
+
+
+Locators : 
+
+
+TagName : select  --> Cannot be used of single object identification, as group of objects can share the same tagname
+
+ 
+
+
+
+class="nav-search-dropdown searchSelect" --> Cannot used for identification, Because the value of class name have a space...
+
+id="searchDropdownBox"
+
+name="url"
+
+Identify the Search text box: 
+
+ 
+
+
+
+<input type="text" id="twotabsearchtextbox" value="" name="field-keywords" autocomplete="off" placeholder="" class="nav-input" dir="auto" tabindex="9">
