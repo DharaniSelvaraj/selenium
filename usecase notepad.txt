@@ -1,0 +1,140 @@
+Scenario : Register User in ebay.in
+1. The user should go to ebay.in "https://in.ebay.com"
+2. The user should click on register link
+	1. Identify the register link
+	2. Register link should be cliked
+3. The user should fill the required details
+	1. Identify firstname text box	name="firstname"
+<input maxlength="63" type="text" name="firstname" value="" id="firstname" size="32" class="fld wide wide fld regular-text bold-text float-box" v="1" t="1" a="1" aria-autocomplete="none" aria-required="true" data-state="error" aria-invalid="true" aria-describedby="firstname_w">
+name="firstname"
+id="firstname"
+	2. Type the string input "Dharani"
+	3. Identify lastname text box	id="lastname"
+<input maxlength="63" type="text" name="lastname" value="" id="lastname" size="32" class="fld wide wide fld regular-text bold-text float-box" v="1" t="1" a="1" aria-autocomplete="none" aria-required="true" data-state="error" aria-invalid="false" aria-describedby="">
+name="lastname"
+id="lastname"
+	4. Type the string input "Selvaraj"	
+	5. Identify email text box	name="email"
+<input maxlength="64" type="text" name="email" value="" id="email" size="32" class=" wide fld regular-text bold-text float-box" v="1" t="1" a="1" oncopy="return false" aria-required="true" data-state="error" aria-invalid="false" aria-describedby="">
+name="email"
+id="email"
+	6. Type the string input "dharaniselvarajcbe@gmail.com"
+	7. Identify password text box	id="PASSWORD"
+<input maxlength="64" type="password" name="PASSWORD" value="" id="PASSWORD" size="32" class="re-w3 wide  wide fld regular-text bold-text float-box" aria-describedby="PASSWORD_helper" v="1" t="1" a="1" aria-autocomplete="none" oncopy="return false" autocomplete="off" aria-required="true" data-required-rules="3" data-state="inactive" style="padding-right: 81px">
+name="PASSWORD"
+id="PASSWORD"
+	8. Type the string input "Dharu@10"
+4. The user should click on create account button
+	1. Identify the create account button	id="ppaFormSbtBtn"
+<button id="ppaFormSbtBtn" type="submit" class="btn btn--primary" style="" xpath="1">Create account</button>
+id="ppaFormSbtBtn"
+
+
+Case Study 2: // Example for Radio Button & Check Boxes.
+
+1. The user should go to "http://destinationqa.com/radiobuttons-html/"
+2. The user should select Monday Radio Button
+	1. Identify the Monday radio button. 	name="groupName"
+<input name="groupName" type="radio" value="Mon">
+	2. Select Monday radio button.
+3. The user should check Yellow & Orange check box
+	1. Identify the Yellow and Orange check box 	name="orange"  name="yellow"
+<input name="orange" type="checkbox">
+<input checked="checked" name="yellow" type="checkbox">
+	2. Check Yellow & Orange check box
+
+Case Study 3: // Example for Navigate()
+1. The user should go to "https://www.rediff.com"
+2. The user should get & print the title of the home page
+3. The user should click on Sign in link
+	1. Identify the Sign in link
+	2. Click on the Sign in link
+<a href="https://mail.rediff.com/cgi-bin/login.cgi" title="Already a user? Sign in" class="signin" xpath="1" style="">Sign in</a>
+4. The user should get & print the title of the Login page
+5. The user should go back to the previous page using navige method
+6. The user should get the title & check if it same as home page
+7. The user should use forward method & get the page title & check if it same as Login page
+8. The user should close all the browser entities.
+
+
+Case Study 4: // Example for getAttribute()
+1. The user should go to ebay.in "https://in.ebay.com"
+2. Get all the attribute values of the register link as per the HTML design.
+<a href="https://reg.ebay.com/reg/PartialReg?ru=https%3A%2F%2Fin.ebay.com%2F" _sp="m570.l2621" xpath="1">register</a>	
+
+
+Case study 1: //Registration
+1. The user should go to "https://www.amazon.in"
+2. The user should click Start here. link.
+	1. Identify the Start here. link 	
+	2. Click the Start here. link
+3. The user should fill required details
+	1. Identify the your name text box	id="ap_customer_name"
+<input type="text" maxlength="50" id="ap_customer_name" autocomplete="off" name="customerName" tabindex="1" class="a-input-text a-span12 auth-autofocus auth-required-field" xpath="1">
+	2. Type the input as "Aaaaa"
+	3. Identify the Mobile number text box		id="ap_phone_number"
+<input type="tel" maxlength="50" id="ap_phone_number" placeholder="Mobile number" name="email" tabindex="3" class="a-input-text a-span12 a-spacing-micro auth-required-field auth-require-phone-validation" data-validation-id="phoneNumber" xpath="1">
+	4. Type the input as "1234567898"
+	5. Identify the Email text box 		id="ap_email"
+<input type="email" maxlength="64" id="ap_email" name="secondaryLoginClaim" tabindex="4" class="a-input-text a-span12 auth-require-email-validaton" data-validation-id="email" style="" xpath="1">
+	6. Type the input as "aaa@gmail.com"
+	7. Identify the password text box	id="ap_password"
+<input type="password" maxlength="1024" id="ap_password" autocomplete="off" placeholder="At least 6 characters" name="password" tabindex="5" class="a-input-text a-span12 auth-required-field auth-require-fields-match auth-require-password-validation" xpath="1">
+	8. Type the input as "Aaa@01"
+4. The user should click the continue button
+	1. Identify the continue button   id="continue"
+<input id="continue" tabindex="8" class="a-button-input" type="submit" aria-labelledby="auth-continue-announce" style="" xpath="1">
+	2. Click the continue button
+
+
+case study: 5	// getTitle() and Explicit wait based on the Title
+
+1. The user should go to "https://www.google.com"
+2. The user should search for Automation Testing
+	1. Identify the search text box  	//input[@name='q']
+<input class="gLFyf gsfi" maxlength="2048" name="q" type="text" jsaction="paste:puy29d" aria-autocomplete="both" aria-haspopup="false" autocapitalize="off" autocomplete="off" autocorrect="off" role="combobox" spellcheck="false" title="Search" value="" aria-label="Search" data-ved="0ahUKEwjOreON___kAhUT4o8KHVYxAeYQ39UDCAQ" xpath="1">
+	2. Type the input as "Automation Testing" 
+3. The user should click on Google Search button	
+	1. Identify the Google Search button		//div[@class='VlcLAe']//input[@name='btnK']
+<input class="gNO89b" value="Google Search" aria-label="Google Search" name="btnK" type="submit" data-ved="0ahUKEwjOreON___kAhUT4o8KHVYxAeYQ4dUDCAY" xpath="1" style="">
+	2. Click the Google Search button
+4. Explicitwait based on titlecontains
+5. Get the title should be same as search term
+
+
+Case Study 6:// Example for FindElements
+1. Goto Amazon.in
+2. Search for the "Da Vinci Books"
+3. Click search button
+4. Wait till the collection of books are loaded till the last item(Explicit wait to check the last item of  page is loaded)
+5. Get the Title & price of all the books & print in the console
+
+1. The user should be on Amazon.in  "https://www.amazon.in/"
+
+2. The user should search for the "Da Vinci Books"   
+	1. Identify the select box
+        name="url"
+    
+	2. Select the value called 'Books'
+
+  
+	3. Identify the Search text box
+        id="twotabsearchtextbox"
+    
+	4. Type the string input "Da Vinci Code' Books
+
+3. The user should click search button
+	1. Identify the button with magnifier symbol
+        //input[@tabindex = '10']
+
+ 	2. The button should be clicked    
+
+4. The user should get titles of all the items listed on the page
+    
+	1. Identify the common property that all the elements are sharing     
+    
+	2. Get the text on the element and print using SYSO command...
+
+
+
+
